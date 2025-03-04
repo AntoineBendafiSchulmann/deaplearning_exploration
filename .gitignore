@@ -1,4 +1,8 @@
 venv
 data
+models
 .python-version
 *.vocab
+*.wav
+*.html
+.DS_Store
