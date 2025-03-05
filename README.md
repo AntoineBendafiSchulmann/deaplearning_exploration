@@ -85,7 +85,7 @@ Créer un **modèle Transformer** qui génère du texte en comprenant **tout le 
 Globalement le **Transformer** est plus performant pour générer des phrases cohérentes, mais il est plus lent à apprendre.
 
 
-# 4️⃣  Notebook 4 : RAG - Chatbot Intelligent avec Recherche Documentaire et Synthèse Vocale
+# 4️⃣  Notebook 4 : RAG - Chatbot Intelligent avec Recherche Documentaire et Synthèse Vocale en local 
 
 Ce **pipeline RAG** (**Retrieval-Augmented Generation**) permet d'**améliorer la précision des réponses d'un modèle de langage** en le forçant à **ne pas se baser uniquement sur sa donnée d'entraînement**, mais à **synthétiser des informations extraites de documents**. Grâce à ce processus, les réponses sont **plus précises, actualisées et adaptées aux documents fournis dans le fichier  ```documents.zip``` et à mettre dans un dossier ```/data```** vous aurez donc deux fichiers `connaissances.txt` et  `document.pdf`.
 
