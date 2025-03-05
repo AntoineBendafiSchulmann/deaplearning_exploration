@@ -1,0 +1,46 @@
+# Flask et CORS pour l'API Web
+flask~=3.1.0
+flask-cors~=5.0.1
+
+# LangChain et composants associés pour le RAG
+langchain~=0.3.19
+langchain-community~=0.3.18
+langchain-core~=0.3.40
+langchain-text-splitters~=0.3.6
+langsmith~=0.3.11
+
+# Moteur de recherche vectorielle et transformation de texte en embeddings
+chromadb~=0.6.3
+sentence-transformers~=3.4.1
+pydantic~=2.10.6
+pydantic-settings~=2.8.1
+
+# Moteurs LLM locaux (Llama.cpp / Mistral)
+llama-cpp-python~=0.3.7
+huggingface-hub~=0.29.1
+transformers~=4.49.0
+tokenizers~=0.21.0
+
+# Lecture et extraction de documents pour le RAG
+pdfminer.six~=20240706
+unstructured~=0.16.23
+unstructured-client~=0.31.0
+
+# TTS (Bark)
+bark~=0.1.5
+soundfile~=0.13.1
+
+# NumPy et PyTorch pour le traitement des modèles
+numpy~=1.26.4
+torch~=2.6.0
+torchaudio~=2.6.0
+torchvision~=0.21.0
+
+# Autres utilitaires
+tqdm~=4.67.1
+requests~=2.32.3
+protobuf~=5.29.3
+pillow~=11.1.0
+fsspec~=2024.12.0
+diskcache~=5.6.3
+aiohttp~=3.11.13
