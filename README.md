@@ -109,7 +109,7 @@ Ce **pipeline RAG** (**Retrieval-Augmented Generation**) permet d'**améliorer l
 3. **Ouvrir `index.html` dans un navigateur**  
 ![page web](img/index_example_web_page.png)
 4. **Poser une question (ex. : "Comment faire une tarte aux pommes ?")**  
-5. **Le chatbot dans un premier temps répète la question après l'avoir intégrée puis la répète à voix haute, puis l'analyse des documents se lance, génère une réponse et la lit à voix haute également**  
+5. **Le chatbot dans un premier temps répète la question après l'avoir intégrée,puis l'analyse des documents se lance, génère une réponse et la lit à voix haute également**  
 ![page web après réponse](img/index_example_web_page_answered.png)
 ---
 
