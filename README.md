@@ -1,5 +1,15 @@
 # Exploration - Deep Learning
 
+# activiter l'environnement virtuel
+```bash
+source env/bin/activate
+```
+
+# désactiver l'environnement virtuel
+```bash
+deactivate
+```
+
 #  1️⃣ Notebook 1 : modèle PyTorch sur un dataset de chiffres manuscrits
 
 ## Objectifs :
@@ -80,7 +90,32 @@ Créer un **modèle Transformer** qui génère du texte en comprenant **tout le 
 
 ## 🔎 Différence clé entre LSTM et Transformer :
 ✅ **LSTM** → Lit les mots **un par un** et mémorise ceux d’avant pour anticiper la suite.  
-✅ **Transformer** → Comprend **toute la phrase d’un coup** et choisit le mot suivant en analysant l’ensemble du contexte.
+
+- fonctionne de manière séquentielle : il traite un mot à la fois.
+- utilise une mémoire interne pour retenir le contexte passé.
+- chaque nouveau mot est influencé uniquement par les mots précédents.
+- problème : Plus la phrase est longue, plus l'information des premiers mots est diluée → perte de contexte.
+
+
+
+✅ **Transformer** → Comprend **toute la phrase d’un coup** et choisit le mot suivant en analysant l’ensemble du contexte 
+
+- fonctionne en parallèle grâce à l'attention multi-tête.
+- chaque mot regarde tous les autres mots dans la phrase en même temps.
+- l'attention permet de pondérer l’importance de chaque mot par rapport aux autres.
+- avantage : il garde le contexte global, même pour les phrases longues.
+
+par exemple : 
+- Dans "Le chat dort sous l'arbre et il rêve de souris.",
+- Le mot "il" doit comprendre qu'il fait référence à "chat" et non à "arbre".
+- L’attention multi-tête permet d’établir ce lien.
+
+
+#### étapes du mécanisme d’attention en pratique  :
+1. chaque mot est transformé en un vecteur (représentation numérique).
+2. on calcule l’importance entre chaque mot et tous les autres mots grâce à des formules mathématiques basées sur des produits scalaires (dot product).
+3. on attribue un score d’attention à chaque paire de mots.
+4. chaque mot reçoit une nouvelle représentation enrichie du contexte en fonction des scores d’attention.
 
 Globalement le **Transformer** est plus performant pour générer des phrases cohérentes, mais il est plus lent à apprendre.
 
